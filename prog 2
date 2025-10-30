@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Personal Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background:#ffff66;
+      margin: 0;
+      padding: 0;
+    }
+    .profile-container {
+      background:  #ff99ff;
+      max-width: 400px;
+      margin: 30px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 24px;
+      text-align: center;
+    }
+    .profile-picture {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
+    }
+    h1 {
+      margin: 10px 0 8px 0;
+      color: #99ffff;
+    }
+    .contact-info {
+      margin-bottom: 18px;
+      color:  #99ffff;
+    }
+    .section-title {
+      margin-top: 20px;
+      font-weight: bold;
+      color:  #99ffff;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #eee;
+      margin: 6px 0;
+      padding: 8px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-container">
+    <img src="https://via.placeholder.com/120" alt="Profile Photo" class="profile-picture">
+    <h1>Your Name</h1>
+    <p class="contact-info">
+      ✉️ your.email@example.com<br>
+      📞 (123) 456-7890
+    </p>
+    <div class="section-title">About Me</div>
+    <p>
+      Hi! My name is [Your Name]. I am passionate about web development, technology, and lifelong learning.
+    </p>
+    <div class="section-title">Skills & Hobbies</div>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Photography</li>
+      <li>Reading</li>
+      <li>Traveling</li>
+    </ul>
+  </div>
+</body>
+</html>
