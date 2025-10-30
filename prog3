@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <style>
+    body {
+      background:#80ffff;
+      font-family: Arial, sans-serif;
+    }
+    .feedback-container {
+      max-width: 500px;
+      background: #ffff66;
+      margin: 40px auto;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px #ccc;
+    }
+    h2 {
+      text-align: center;
+      color:  #cc0044;
+    }
+    label {
+      display: block;
+      margin: 14px 0 6px 0;
+      font-weight: 600;
+      color: #b30000;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #bbb;
+      box-sizing: border-box;
+    }
+    .form-group-radio, .form-group-check {
+      margin-bottom: 12px;
+    }
+    .form-group-radio label, .form-group-check label {
+      display: inline-block;
+      margin-right: 12px;
+    }
+    button {
+      background: #368b44;
+      color: #00ffff;
+      font-size: 16px;
+      border: none;
+      border-radius: 24px;
+      padding: 12px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 18px;
+      font-weight: bold;
+      transition: .2s linear;
+    }
+    button:hover {
+      background: #256c32;
+    }
+  </style>
+</head>
+<body>
+  <div class="feedback-container">
+    <h2>Feedback Form</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="service">How do you rate your experience?</label>
+      <div class="form-group-radio">
+        <input type="radio" id="bad" name="rating" value="bad">
+        <label for="bad">Bad</label>
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="excellent" name="rating" value="excellent">
+        <label for="excellent">Excellent</label>
+      </div>
+
+      <label for="features">Which features do you use?</label>
+      <div class="form-group-check">
+        <input type="checkbox" id="feature1" name="features" value="feature1">
+        <label for="feature1">Feature 1</label>
+        <input type="checkbox" id="feature2" name="features" value="feature2">
+        <label for="feature2">Feature 2</label>
+        <input type="checkbox" id="feature3" name="features" value="feature3">
+        <label for="feature3">Feature 3</label>
+      </div>
+
+      <label for="suggestion">Would you recommend us?</label>
+      <select id="suggestion" name="suggestion">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="maybe">Maybe</option>
+      </select>
+
+      <label for="comments">Your Comments</label>
+      <textarea id="comments" name="comments" rows="4" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>
+
