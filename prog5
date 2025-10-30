@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stylish Webpage</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #222335;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    header {
+      font-family: 'Caveat', cursive;
+      font-size: 2.8em;
+      color: #ffffff;
+      background: rgba(44, 62, 80, 0.6);
+      padding: 40px 0 20px 0;
+      text-align: center;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 10px #222;
+    }
+    .content {
+      background: rgba(255,255,255,0.88);
+      margin: 32px auto;
+      width: 70%;
+      border-radius: 16px;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.18);
+      padding: 28px;
+    }
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      color: #005D8F;
+      margin-top: 0;
+      margin-bottom: 9px;
+    }
+    p {
+      font-size: 1.1em;
+      color: #333333;
+      line-height: 1.7;
+      font-family: 'Verdana', sans-serif;
+    }
+    .accent {
+      font-family: 'Pacifico', cursive;
+      color: #E04F1A;
+      font-size: 1.25em;
+      background: #FFF5ED;
+      padding: 5px 12px;
+      border-radius: 8px;
+      box-shadow: 0 0 4px #eac7b1;
+      display: inline-block;
+    }
+    /* Import fonts from Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Oswald:wght@500&family=Pacifico&display=swap');
+  </style>
+</head>
+<body>
+  <header>
+    My Stylish Webpage
+  </header>
+  <div class="content">
+    <h2>Welcome!</h2>
+    <p>
+      This page showcases <span class="accent">various font styles</span>, lively colors, and a beautiful background image. Explore the possibilities of creative web design!
+    </p>
+    <p>
+      The header has a fancy font, headings are bold, and accents pop with a custom style. You can easily tweak any of these colors and fonts for your own projects.
+    </p>
+    <p>
+      Try changing the background image URL or font families to see different effects.
+    </p>
+  </div>
+</body>
+</html>
