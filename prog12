@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --primary: #2c5b96;
+      --secondary: #ffb86b;
+      --bg: #f4f7fa;
+      --card-bg: #fff;
+      --accent: #eaf2fd;
+      --radius: 14px;
+      --shadow: 0 2px 12px rgba(44,91,150,.08);
+      --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      --font-title: 'Oswald', sans-serif;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+    body {
+      font-family: var(--font-main);
+      background: var(--bg);
+      margin: 0;
+      padding: 0;
+      color: #34495e;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 36px 34px 34px 34px;
+    }
+    .profile-header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .avatar {
+      width: 94px;
+      height: 94px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--accent);
+      box-shadow: 0 1px 8px rgba(44, 91, 150, .13);
+      margin-bottom: 14px;
+    }
+    .profile-header h1 {
+      margin: 0;
+      font-family: var(--font-title);
+      font-size: 2em;
+      color: var(--primary);
+    }
+    .profile-header p {
+      color: #6c757d;
+      margin-top: 6px;
+      font-size: 1.1em;
+    }
+    .section {
+      margin-bottom: 26px;
+    }
+    .section-title {
+      font-size: 1.23em;
+      font-family: var(--font-title);
+      color: var(--primary);
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .biography {
+      color: #444;
+      background: var(--accent);
+      padding: 14px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      font-size: 1.03em;
+      line-height: 1.65;
+    }
+    .contact-list, .social-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .contact-list li, .social-list li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.06em;
+    }
+    .contact-label {
+      width: 90px;
+      color: var(--secondary);
+      font-weight: 600;
+    }
+    .social-link {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .social-link:hover {
+      color: var(--secondary);
+      text-decoration: underline;
+    }
+    @media (max-width: 700px) {
+      .container {
+        max-width: 95vw;
+        padding: 18px 8vw;
+      }
+      .profile-header h1 {
+        font-size: 1.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="profile-header">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile Photo" class="avatar" />
+      <h1>John Smith</h1>
+      <p>Web Developer &amp; Designer</p>
+    </div>
+
+    <section class="section">
+      <div class="section-title">Biography</div>
+      <div class="biography">
+        Passionate web developer with 5+ years of experience building modern, user-friendly sites. Enjoys solving creative challenges, working with HTML, CSS, and JavaScript, and collaborating with teams to deliver beautiful web solutions.
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Contact Information</div>
+      <ul class="contact-list">
+        <li>
+          <span class="contact-label">Email:</span>
+          <span>john.smith@email.com</span>
+        </li>
+        <li>
+          <span class="contact-label">Phone:</span>
+          <span>+1 234 567 8901</span>
+        </li>
+        <li>
+          <span class="contact-label">Location:</span>
+          <span>New York, USA</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <div class="section-title">Social Media</div>
+      <ul class="social-list">
+        <li>
+          <span class="contact-label">LinkedIn:</span>
+          <a href="https://linkedin.com/" target="_blank" class="social-link">linkedin.com/in/johnsmith</a>
+        </li>
+        <li>
+          <span class="contact-label">Twitter:</span>
+          <a href="https://twitter.com/" target="_blank" class="social-link">@johnsmith</a>
+        </li>
+        <li>
+          <span class="contact-label">GitHub:</span>
+          <a href="https://github.com/" target="_blank" class="social-link">github.com/johnsmith</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
