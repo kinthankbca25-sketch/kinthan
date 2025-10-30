@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Base styles: Mobile-first single column layout */
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8fafd;
+      margin: 0;
+      padding: 0;
+    }
+    header, main, aside, footer {
+      padding: 18px;
+      margin: 8px;
+      border-radius: 8px;
+    }
+    header {
+      background: #2c5b96;
+      color: #fff;
+      text-align: center;
+    }
+    main {
+      background: #800080;
+    }
+    aside {
+      background: #ffdca9;
+    }
+    footer {
+      background: #2c5b96;
+      color: #fff;
+      text-align: center;
+    }
+
+    /* Tablet: Two-column layout */
+    @media (min-width: 600px) {
+      .container {
+        display: flex;
+        gap: 18px;
+      }
+      main {
+        flex: 2;
+      }
+      aside {
+        flex: 1;
+      }
+    }
+
+    /* Desktop: Larger text, more padding */
+    @media (min-width: 900px) {
+      header, main, aside, footer {
+        font-size: 1.2em;
+        padding: 32px;
+      }
+      body {
+        background: #e3f7ef;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsive Web Page</h1>
+    <p>Resize the browser to see layout changes</p>
+  </header>
+  <div class="container">
+    <main>
+      <h2>Main Content</h2>
+      <p>This area adjusts its width based on the screen size. On larger screens, an aside appears next to it.</p>
+    </main>
+    <aside>
+      <h3>Aside</h3>
+      <p>On mobile, this appears below the main content. On tablet and desktop, it's beside the main content.</p>
+    </aside>
+  </div>
+  <footer>
+    &copy; 2025 Responsive Example
+  </footer>
+</body>
+</html>
