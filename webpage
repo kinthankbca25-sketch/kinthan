@@ -1,0 +1,107 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Developer Portfolio</title>
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #d0f0ff, #f5d1ff);
+    color: #006600;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    padding: 20px;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+  h1 {
+    color: #7a00ff;
+  }
+  nav button {
+    margin: 10px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #7a00ff;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  nav button:hover {
+    background: #a86bff;
+    transform: scale(1.05);
+  }
+  #content {
+    margin: 40px auto;
+    width: 80%;
+    max-width: 500px;
+    background: rgba(255,255,255,0.7);
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  footer {
+    background: rgba(255,255,255,0.8);
+    padding: 10px;
+    font-size: 14px;
+  }
+  #themeBtn {
+    background: #00b894;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>💻 Kinthan K Raja</h1>
+  <p>Front-End Developer | Creative Coder | Tech Enthusiast</p>
+</header>
+
+<nav>
+  <button onclick="showSection('about')">About</button>
+  <button onclick="showSection('skills')">Skills</button>
+  <button onclick="showSection('projects')">Projects</button>
+  <button onclick="showSection('contact')">Contact</button>
+  <button id="themeBtn" onclick="changeTheme()">Change Theme</button>
+</nav>
+
+<div id="content">
+  <p>Welcome to my portfolio! Click the buttons above to know more about me.</p>
+</div>
+
+<footer>
+  © 2025 Kinthan K Raja | Designed with ❤️ and Code
+</footer>
+
+<script>
+  // 1️⃣ JavaScript Function – To show content dynamically
+  function showSection(section) {
+    const data = {
+      about: "👋 I'm Kinthan, a passionate web developer who loves turning ideas into reality through clean and creative code.",
+      skills: "💡 HTML, CSS, JavaScript, React, and Python — I love designing visually appealing and efficient interfaces.",
+      projects: "🧩 Some of my projects include portfolio sites, mini games, and interactive web apps.",
+      contact: "📧 Email: kinthan@example.com | 🌐 GitHub: github.com/kinthan"
+    };
+    document.getElementById('content').innerHTML = data[section];
+  }
+
+  // 2️⃣ JavaScript Function – To change theme colors
+  function changeTheme() {
+    const colors = [
+      "linear-gradient(135deg, #ffb6f9, #a3f0ff, #ffe7a1)",
+      "linear-gradient(135deg, #a1ffce, #faffd1)",
+      "linear-gradient(135deg, #f6d365, #fda085)",
+      "linear-gradient(135deg, #84fab0, #8fd3f4)"
+    ];
+    const random = Math.floor(Math.random() * colors.length);
+    document.body.style.background = colors[random];
+  }
+</script>
+
+</body>
+</html>
